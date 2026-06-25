@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClearStep Shower Co. | Walk-In Shower Installs</title>
+    <meta
+      name="description"
+      content="Affordable walk-in shower installs with one-day installation options, easy-clean surfaces, and lifetime warranty coverage."
+    >
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ClearStep Shower Co. home">
+        <span class="brand-mark">CS</span>
+        <span>ClearStep Shower Co.</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#work">Showers</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#estimate">Free Estimate</a>
+      </nav>
+      <a class="header-phone" href="tel:+15550192934">(555) 019-2934</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Walk-in shower installation">
+        <img
+          class="hero-image"
+          src="assets/hero-shower.png"
+          alt="Bright bathroom with a newly installed walk-in shower"
+        >
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Walk-in shower installs</p>
+          <h1>Don’t overpay for a safer, easier shower.</h1>
+          <p class="hero-copy">
+            Get the same clean, durable shower system style big box stores sell, installed by a local crew for up to 50% less.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#estimate">Schedule Free Estimate</a>
+            <a class="button secondary" href="#work">See Shower Styles</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-band" aria-label="Key offer">
+        <div class="proof-item">
+          <span class="proof-value">50%</span>
+          <span class="proof-label">Less than big box pricing</span>
+        </div>
+        <div class="proof-item">
+          <span class="proof-value">1 day</span>
+          <span class="proof-label">Install options available*</span>
+        </div>
+        <div class="proof-item">
+          <span class="proof-value">Lifetime</span>
+          <span class="proof-label">Warranty coverage</span>
+        </div>
+      </section>
+
+      <section class="section split" id="benefits">
+        <div>
+          <p class="eyebrow">Built for daily life</p>
+          <h2>Low-maintenance showers without the showroom markup.</h2>
+        </div>
+        <div class="benefit-grid" aria-label="Benefits">
+          <article>
+            <h3>Easy to Clean</h3>
+            <p>Smooth wall panels reduce grout lines and make regular cleaning faster.</p>
+          </article>
+          <article>
+            <h3>Safer Entry</h3>
+            <p>Low-threshold bases and optional grab bars make stepping in and out easier.</p>
+          </article>
+          <article>
+            <h3>Fast Install</h3>
+            <p>Many projects can be completed in as little as one day after measuring and prep.</p>
+          </article>
+          <article>
+            <h3>Made to Fit</h3>
+            <p>Choose the wall look, fixture finish, storage, doors, and accessibility add-ons.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Popular looks</p>
+          <h2>Clean installs for real bathrooms.</h2>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img src="assets/gallery-low-threshold.png" alt="Walk-in shower with low threshold and grab bar">
+            <figcaption>
+              <strong>Low Threshold</strong>
+              Safer entry with clean white wall panels.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery-modern-panels.png" alt="Modern walk-in shower with black fixtures and shelves">
+            <figcaption>
+              <strong>Modern Panels</strong>
+              Stone-look walls with matte black fixtures.
+            </figcaption>
+          </figure>
+          <figure class="quote-panel">
+            <blockquote>
+              “We wanted the bathroom easier to use, easier to clean, and done quickly. This checked all three boxes.”
+            </blockquote>
+            <cite>Sample homeowner review</cite>
+          </figure>
+        </div>
+      </section>
+
+      <section class="estimate-section" id="estimate">
+        <div class="estimate-copy">
+          <p class="eyebrow">Free in-home estimate</p>
+          <h2>See what your bathroom could cost before you commit.</h2>
+          <p>
+            Tell us the basics and we’ll follow up with available appointment windows, product options, and a no-pressure quote.
+          </p>
+          <ul class="check-list">
+            <li>No obligation</li>
+            <li>Local installation crew</li>
+            <li>Lifetime warranty options</li>
+          </ul>
+        </div>
+
+        <form class="estimate-form" id="estimate-form">
+          <label>
+            Full name
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Phone
+            <input name="phone" type="tel" autocomplete="tel" required>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            ZIP code
+            <input name="zip" inputmode="numeric" autocomplete="postal-code" required>
+          </label>
+          <label class="full">
+            What are you looking for?
+            <select name="project">
+              <option>Replace tub with walk-in shower</option>
+              <option>Replace existing shower</option>
+              <option>Accessibility upgrade</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label class="full">
+            Notes
+            <textarea name="notes" rows="4" placeholder="Timing, current bath type, accessibility needs, or style preferences"></textarea>
+          </label>
+          <button class="button primary full" type="submit">Request My Free Estimate</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="fine-print">
+        <p>
+          *One-day installation depends on project scope, field measurements, material availability, and site conditions.
+          Savings vary by configuration and comparable quotes.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>ClearStep Shower Co.</span>
+      <span>Walk-in shower installs and free estimates.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
