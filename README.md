@@ -1,4 +1,4 @@
-# Blue Rhino Bath Sample Site
+# Boss Bath Sample Site
 
 Static sample landing page for walk-in shower installation leads.
 
