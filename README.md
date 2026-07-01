@@ -1,4 +1,4 @@
-# ClearStep Shower Co. Sample Site
+# Blue Rhino Bath Sample Site
 
 Static sample landing page for walk-in shower installation leads.
 
