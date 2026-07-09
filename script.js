@@ -1,5 +1,3 @@
-const form = document.querySelector("#estimate-form");
-const status = document.querySelector("#form-status");
 const revealItems = document.querySelectorAll(".reveal");
 
 revealItems.forEach((item, index) => {
@@ -27,12 +25,17 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+const demoForm = document.querySelector("form[data-demo-form]");
+const status = document.querySelector("#form-status");
 
-  const data = new FormData(form);
-  const name = String(data.get("name") || "").trim().split(" ")[0] || "there";
+if (demoForm && status) {
+  demoForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-  status.textContent = `Thanks, ${name}. This sample form is ready to connect to your lead system.`;
-  form.reset();
-});
+    const data = new FormData(demoForm);
+    const name = String(data.get("name") || "").trim().split(" ")[0] || "there";
+
+    status.textContent = `Thanks, ${name}. This sample form is ready to connect to your lead system.`;
+    demoForm.reset();
+  });
+}

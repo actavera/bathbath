@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="top-ticker" aria-label="Veteran special pricing notice">
+      <a href="veterans.html">
+        <span>Are you a disabled veteran? Contact us to see if you qualify for special pricing!</span>
+        <span>Are you a disabled veteran? Contact us to see if you qualify for special pricing!</span>
+        <span>Are you a disabled veteran? Contact us to see if you qualify for special pricing!</span>
+      </a>
+    </div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Blue Rhino Bath home">
         <img class="brand-logo" src="assets/blue-rhino-logo-dark.png" alt="">
@@ -20,9 +28,11 @@
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="#work">Showers</a>
         <a href="#benefits">Benefits</a>
+        <a href="veterans.html">Veterans</a>
+        <a href="assistance.html">Grant Help</a>
         <a href="#estimate">Free Estimate</a>
       </nav>
-      <a class="header-phone" href="tel:+15550192934">(555) 019-2934</a>
+      <a class="header-phone" href="tel:+18012280693">801-228-0693</a>
     </header>
 
     <main id="top">
@@ -43,7 +53,8 @@
           </p>
           <div class="hero-actions hero-ctas">
             <a class="button primary" href="#estimate">Schedule Free Estimate</a>
-            <a class="button secondary" href="#work">See Shower Styles</a>
+            <a class="button secondary" href="veterans.html">Veteran Pricing</a>
+            <a class="button secondary" href="assistance.html">Grant Help</a>
           </div>
         </div>
       </section>
@@ -131,7 +142,13 @@
           </ul>
         </div>
 
-        <form class="estimate-form reveal" id="estimate-form">
+        <form class="estimate-form reveal" id="estimate-form" action="https://formsubmit.co/mail@elevatedmountain.net" method="POST">
+          <input type="hidden" name="_subject" value="Blue Rhino Bath general estimate lead">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://actavera.github.io/bathbath/thanks.html">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="honeypot">
+          <input type="hidden" name="Lead source" value="Homepage estimate form">
           <label>
             Full name
             <input name="name" autocomplete="name" required>
@@ -179,7 +196,7 @@
         <img class="footer-logo" src="assets/blue-rhino-logo-dark.png" alt="">
         Blue Rhino Bath
       </span>
-      <span>Walk-in shower installs and free estimates.</span>
+      <span>Walk-in shower installs and free estimates. <a href="tel:+18012280693">801-228-0693</a></span>
     </footer>
 
     <script src="script.js"></script>
