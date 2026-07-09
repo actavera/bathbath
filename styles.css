@@ -91,6 +91,10 @@ a {
   white-space: normal;
 }
 
+.top-ticker a > span:not(:first-of-type) {
+  display: none;
+}
+
 .site-header {
   position: sticky;
   top: 0;
