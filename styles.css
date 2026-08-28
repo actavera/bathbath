@@ -1039,6 +1039,34 @@ textarea:focus {
   transform: translateY(-2px);
 }
 
+.footer-social .rep-portal-link {
+  width: 38px;
+  min-width: 38px;
+  padding: 0;
+  border-color: rgba(135, 215, 255, 0.16);
+  background:
+    linear-gradient(135deg, rgba(31, 151, 255, 0.16), rgba(135, 215, 255, 0.04)),
+    rgba(255, 255, 255, 0.035);
+  color: rgba(247, 251, 255, 0.62);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.footer-social .rep-portal-link:hover {
+  border-color: rgba(135, 215, 255, 0.74);
+  background: rgba(31, 151, 255, 0.2);
+  color: #fff;
+}
+
+.rep-portal-link span {
+  display: inline-grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+
 .footer-logo {
   width: 118px;
   height: 72px;
