@@ -1064,9 +1064,9 @@ textarea:focus {
   height: 42px;
   padding: 0;
   place-items: center;
-  border-color: rgba(106, 207, 255, 0.5);
+  border-color: rgba(24, 72, 108, 0.48);
   border-radius: 8px;
-  color: #6acfff;
+  color: #18486c;
   font-size: 14px;
   font-weight: 900;
 }
