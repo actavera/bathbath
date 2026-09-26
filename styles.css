@@ -1058,6 +1058,24 @@ textarea:focus {
   color: #fff;
 }
 
+.footer-social .admin-portal-link {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  border-color: rgba(106, 207, 255, 0.5);
+  border-radius: 8px;
+  color: #6acfff;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.footer-social .admin-portal-link:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
 .rep-portal-link span {
   display: inline-grid;
   width: 22px;
