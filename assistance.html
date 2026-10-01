@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://bluerhinobath.com/assets/social-share.png">
     <link rel="image_src" href="https://bluerhinobath.com/assets/social-share.png">
     <link rel="icon" href="assets/blue-rhino-icon-transparent.png" type="image/png">
-    <link rel="stylesheet" href="styles.css?v=20260709-2">
+    <link rel="stylesheet" href="styles.css?v=20261001-1">
   </head>
   <body>
     <div class="top-ticker" aria-label="Veteran special pricing notice">
@@ -86,37 +86,25 @@
             <input name="name" autocomplete="name" required>
           </label>
           <label>
-            Phone
-            <input name="phone" type="tel" autocomplete="tel" required>
-          </label>
-          <label>
-            Email
-            <input name="email" type="email" autocomplete="email" required>
+            Phone or email
+            <input name="contact" required>
           </label>
           <label>
             ZIP code
             <input name="zip" inputmode="numeric" autocomplete="postal-code" required>
           </label>
           <label>
-            State
-            <input name="state" autocomplete="address-level1">
-          </label>
-          <label>
-            Household size
-            <input name="Household size" inputmode="numeric">
-          </label>
-          <label class="full">
-            What best describes your situation?
-            <select name="Financial situation">
-              <option>Income below state median</option>
-              <option>Finances recently changed</option>
-              <option>Fixed income</option>
-              <option>Not sure what I qualify for</option>
+            Project type
+            <select name="project">
+              <option>Replace tub with walk-in shower</option>
+              <option>Replace existing shower</option>
+              <option>Accessibility upgrade</option>
+              <option>Not sure yet</option>
             </select>
           </label>
           <label class="full">
-            Notes
-            <textarea name="notes" rows="4" placeholder="Current shower or tub, safety concerns, income questions, and best time to reach you"></textarea>
+            Preferred contact method
+            <select name="preferred_contact"><option>Phone call</option><option>Text message</option><option>Email</option></select>
           </label>
           <button class="button primary full" type="submit">Check My Options</button>
           <p class="form-note full">Grant programs, special pricing, and eligibility vary by state, income level, documentation, and project scope.</p>

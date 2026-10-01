@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://bluerhinobath.com/assets/social-share.png">
     <link rel="image_src" href="https://bluerhinobath.com/assets/social-share.png">
     <link rel="icon" href="assets/blue-rhino-icon-transparent.png" type="image/png">
-    <link rel="stylesheet" href="styles.css?v=20260709-2">
+    <link rel="stylesheet" href="styles.css?v=20261001-1">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -75,7 +75,8 @@
         <span>Blue Rhino Bath</span>
       </a>
       <nav class="main-nav" aria-label="Primary navigation">
-        <a href="#work">Showers</a>
+        <a href="#services">Services</a>
+        <a href="#work">Projects</a>
         <a href="#benefits">Benefits</a>
         <a href="veterans.html">Veterans</a>
         <a href="assistance.html">Grant Help</a>
@@ -101,10 +102,12 @@
             Get the same clean, durable shower system style big box stores sell, installed by a Richmond-area crew for up to 50% less.
           </p>
           <div class="hero-actions hero-ctas">
-            <a class="button primary" href="#estimate">Schedule Free Estimate</a>
+            <a class="button primary" href="#estimate">Get a Free Estimate</a>
+            <a class="button secondary mobile-call-cta" href="tel:+18882985562">Call (888) 298-5562</a>
             <a class="button secondary" href="veterans.html">Veteran Pricing</a>
             <a class="button secondary" href="assistance.html">Grant Help</a>
           </div>
+          <p class="hero-service-area">Serving Richmond and surrounding Central Virginia communities.</p>
         </div>
       </section>
 
@@ -148,6 +151,20 @@
         </div>
       </section>
 
+      <section class="section services-section" id="services">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Richmond shower services</p>
+          <h2>Answers for the questions homeowners ask before they schedule.</h2>
+        </div>
+        <div class="service-link-grid">
+          <a class="service-link reveal" href="richmond-walk-in-shower-installation.html"><strong>Walk-In Shower Installation</strong><span>Who installs locally and what is included?</span></a>
+          <a class="service-link reveal" href="tub-to-shower-conversion-richmond.html"><strong>Tub-to-Shower Conversion</strong><span>Can your tub footprint become a shower?</span></a>
+          <a class="service-link reveal" href="low-threshold-showers-richmond.html"><strong>Low-Threshold Showers</strong><span>Easier entry without an institutional look.</span></a>
+          <a class="service-link reveal" href="one-day-shower-installation-richmond.html"><strong>One-Day Installation</strong><span>When a fast installation is realistic.</span></a>
+          <a class="service-link reveal" href="walk-in-shower-cost-richmond.html"><strong>Walk-In Shower Cost</strong><span>What affects the installed price?</span></a>
+        </div>
+      </section>
+
       <section class="section" id="work">
         <div class="section-heading reveal">
           <p class="eyebrow">Popular looks</p>
@@ -168,11 +185,11 @@
               Stone-look walls with matte black fixtures.
             </figcaption>
           </figure>
-          <figure class="quote-panel reveal">
-            <blockquote>
-              “We wanted the bathroom easier to use, easier to clean, and done quickly. This checked all three boxes.”
-            </blockquote>
-            <cite>Sample homeowner review</cite>
+          <figure class="project-placeholder reveal">
+            <div>
+              <strong>Completed project case studies</strong>
+              <p>Homeowner-approved Richmond project photos, scope details, and outcomes will appear here as completed installations are documented.</p>
+            </div>
           </figure>
         </div>
       </section>
@@ -189,6 +206,14 @@
             <li>Local installation crew</li>
             <li>Lifetime warranty options</li>
           </ul>
+          <div class="after-submit">
+            <h3>What happens after I submit?</h3>
+            <ol>
+              <li>We contact you using your preferred method.</li>
+              <li>We confirm the bathroom, ZIP code, and a convenient appointment window.</li>
+              <li>A local specialist measures the space and prepares a written estimate.</li>
+            </ol>
+          </div>
         </div>
 
         <form class="estimate-form reveal" id="estimate-form" action="https://formsubmit.co/robert@bluerhinobath.com" method="POST">
@@ -203,19 +228,15 @@
             <input name="name" autocomplete="name" required>
           </label>
           <label>
-            Phone
-            <input name="phone" type="tel" autocomplete="tel" required>
-          </label>
-          <label>
-            Email
-            <input name="email" type="email" autocomplete="email" required>
+            Phone or email
+            <input name="contact" required>
           </label>
           <label>
             ZIP code
             <input name="zip" inputmode="numeric" autocomplete="postal-code" required>
           </label>
-          <label class="full">
-            What are you looking for?
+          <label>
+            Project type
             <select name="project">
               <option>Replace tub with walk-in shower</option>
               <option>Replace existing shower</option>
@@ -223,9 +244,13 @@
               <option>Not sure yet</option>
             </select>
           </label>
-          <label class="full">
-            Notes
-            <textarea name="notes" rows="4" placeholder="Timing, current bath type, accessibility needs, or style preferences"></textarea>
+          <label>
+            Preferred contact method
+            <select name="preferred_contact" required>
+              <option>Phone call</option>
+              <option>Text message</option>
+              <option>Email</option>
+            </select>
           </label>
           <button class="button primary full" type="submit">Request My Free Estimate</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
