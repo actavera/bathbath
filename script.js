@@ -1,5 +1,13 @@
 const revealItems = document.querySelectorAll(".reveal");
 
+document.querySelectorAll("[data-before-after]").forEach((comparison) => {
+  const range = comparison.querySelector(".before-after-range");
+  if (!range) return;
+  const updateComparison = () => comparison.style.setProperty("--reveal-position", `${range.value}%`);
+  range.addEventListener("input", updateComparison);
+  updateComparison();
+});
+
 revealItems.forEach((item, index) => {
   item.style.setProperty("--reveal-delay", `${Math.min(index * 70, 420)}ms`);
 });
