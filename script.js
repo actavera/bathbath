@@ -1,5 +1,49 @@
 const revealItems = document.querySelectorAll(".reveal");
 
+const analyticsConfig = {
+  host: "https://crm.bluerhinobath.com/umami",
+  websiteId: "4837c197-c70f-4e8d-8cb7-84adceab78c2",
+};
+
+function trackAnalyticsEvent(name, data = {}) {
+  if (window.umami?.track) window.umami.track(name, data);
+}
+
+function initializeAnalytics() {
+  document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+    link.addEventListener("click", () => trackAnalyticsEvent("phone_click", { page: location.pathname }));
+  });
+
+  document.querySelectorAll('a[href="#estimate"], a[href$="#estimate"]').forEach((link) => {
+    link.addEventListener("click", () => trackAnalyticsEvent("estimate_click", { page: location.pathname }));
+  });
+
+  document.querySelectorAll("form.estimate-form").forEach((form) => {
+    let started = false;
+    form.addEventListener("focusin", () => {
+      if (started) return;
+      started = true;
+      trackAnalyticsEvent("form_start", { page: location.pathname });
+    });
+    form.addEventListener("submit", () => trackAnalyticsEvent("form_submit", { page: location.pathname }));
+  });
+
+  if (location.pathname.endsWith("/thanks.html") || location.pathname === "/thanks.html") {
+    trackAnalyticsEvent("lead_complete", { page: location.pathname });
+  }
+}
+
+if (["bluerhinobath.com", "www.bluerhinobath.com"].includes(location.hostname)) {
+  const analyticsScript = document.createElement("script");
+  analyticsScript.defer = true;
+  analyticsScript.src = `${analyticsConfig.host}/script.js`;
+  analyticsScript.dataset.websiteId = analyticsConfig.websiteId;
+  analyticsScript.dataset.hostUrl = analyticsConfig.host;
+  analyticsScript.dataset.domains = "bluerhinobath.com,www.bluerhinobath.com";
+  analyticsScript.addEventListener("load", initializeAnalytics);
+  document.head.appendChild(analyticsScript);
+}
+
 document.querySelectorAll("[data-before-after]").forEach((comparison) => {
   const range = comparison.querySelector(".before-after-range");
   if (!range) return;
