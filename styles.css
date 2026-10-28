@@ -625,9 +625,8 @@ h3 {
 .before-after {
   position: relative;
   overflow: hidden;
-  width: min(100%, 920px);
+  width: min(100%, 760px);
   aspect-ratio: 2 / 3;
-  max-height: 78vh;
   margin-inline: auto;
   border: 1px solid rgba(10, 26, 43, 0.2);
   border-radius: 8px;
@@ -1639,7 +1638,6 @@ textarea:focus {
 
   .before-after {
     width: 100%;
-    max-height: none;
   }
 
   figcaption {
