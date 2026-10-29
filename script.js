@@ -1,5 +1,17 @@
 const revealItems = document.querySelectorAll(".reveal");
 
+const adRevvScripts = [
+  "https://cdn.idpixel.app/v1/idp-analytics-6ae23d0882d07f4488854767.min.js",
+  "https://analytics.adrevv.com/pixel/Cr7RmJ11K8HlfBJh",
+];
+
+for (const source of adRevvScripts) {
+  const script = document.createElement("script");
+  script.src = source;
+  script.defer = true;
+  document.head.appendChild(script);
+}
+
 const analyticsConfig = {
   host: "https://crm.bluerhinobath.com/umami",
   websiteId: "4837c197-c70f-4e8d-8cb7-84adceab78c2",
